@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crop Prediction - Input Data</title>
+  <style>
+    /* Dark-themed styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #333;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+       /* Add the background image URL and properties */
+      background-image: url('https://tse3.mm.bing.net/th?id=OIP.cu40tTGcAGJgBP3bYNa6XAHaEo&pid=Api&P=0&h=180');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    header {
+      background-color: #222;
+      padding: 20px 0;
+      text-align: center;
+      background-image: url('https://tse3.mm.bing.net/th?id=OIP.cu40tTGcAGJgBP3bYNa6XAHaEo&pid=Api&P=0&h=180');
+      background-size: cover;
+      background-repeat: no-repeat;
+
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .input-form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .input-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"] {
+      width: calc(100% - 10px);
+      padding: 8px;
+      border: none;
+      border-radius: 5px;
+      background-color: #444;
+      color: #fff;
+    }
+
+    .submit-button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .submit-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Crop Prediction - Input Data</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <form action="/prediction" method="POST">
+      <div class="input-group">
+        <label for="nitrogen">Nitrogen</label>
+        <input type="text" id="nitrogen" name="nitrogen" placeholder="Enter nitrogen level...">
+      </div>
+      
+      <div class="input-group">
+        <label for="phosphorus">Phosphorus</label>
+        <input type="text" id="phosphorus" name="phosphorus" placeholder="Enter phosphorus level...">
+      </div>
+      
+      <div class="input-group">
+        <label for="potassium">Potassium</label>
+        <input type="text" id="potassium" name="potassium" placeholder="Enter potassium level...">
+      </div>
+      
+      <div class="input-group">
+        <label for="temperature">Temperature</label>
+        <input type="text" id="temperature" name="temperature" placeholder="Enter temperature...">
+      </div>
+      
+      <div class="input-group">
+        <label for="humidity">Humidity</label>
+        <input type="text" id="humidity" name="humidity" placeholder="Enter humidity...">
+      </div>
+      
+      <div class="input-group">
+        <label for="ph">pH</label>
+        <input type="text" id="ph" name="ph" placeholder="Enter pH level...">
+      </div>
+      
+      <div class="input-group">
+        <label for="rainfall">Rainfall</label>
+        <input type="text" id="rainfall" name="rainfall" placeholder="Enter rainfall...">
+      </div>
+      
+      <button type="submit" class="submit-button">Predict</button>
+    </form>
+  </main>
+  
+  <footer>
+    <p>&copy; 2024 Crop Prediction Project</p>
+  </footer>
+</body>
+</html>
